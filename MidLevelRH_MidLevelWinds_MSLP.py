@@ -1,6 +1,7 @@
 """
 Script to plot pressure-weighted-mean relative humidity (RH) and winds along with mean sea level pressure.
 Credit goes to Dr. Levi Cowan (Tropical Tidbits) for the original map concept.
+This version relies on Unidata's Science Gateway THREDDS server.
 
 NOTE:
     If you get an error that looks like the following:
