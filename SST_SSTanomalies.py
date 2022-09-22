@@ -119,7 +119,9 @@ gl.xlocator = mticker.FixedLocator(np.arange(-180., 180., 10.))
 gl.ylocator = mticker.FixedLocator(np.arange(-90., 90., 5.))
 gl.xlabel_style = {'size': 11}
 gl.ylabel_style = {'size': 11}
-ax.set_title(RequestedDate.strftime('NOAA OISST (contours) and anomalies (shading) for %d %b %Y'), loc='right')
+ax.set_title(RequestedDate.strftime('NOAA OISST (contours) and anomalies (shading) for %d %b %Y'), loc='right',
+             weight='bold')
+ax.set_title('anomalies relative to 1991-2020 climatology', loc='left', size=9)
 ax.spines['geo'].set_zorder(100)
 plt.tight_layout()
 addcolorbar(fig, ax, im, clevels)
